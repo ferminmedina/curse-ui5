@@ -1,0 +1,25 @@
+<mvc:View controllerName="Globant.customers.controller.Orders"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>       
+            
+            <Table id="idCustomersTable" inset="false" items="{ path: 'Orders>/'}">
+            <columns>
+                <Column id='_IDGenColumn1' width="12em">
+                    <Text id="_IDGenText5" text="Tabla de ejemplo!"/>
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem id="_IDGenColumnListItem1" vAlign="Middle" type="Navigation">
+                    <cells>
+                        <ObjectIdentifier id="_IDGenObjectIdentifier1" title="{Orders>OrderID}" text="{Orders>ShipAddress}"></ObjectIdentifier>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+        
+    </content> 
+    </Page>
+</mvc:View>
